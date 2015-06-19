@@ -1,0 +1,4 @@
+site 'http://supermarket.getchef.com/api/v1'
+
+cookbook 'nginx', git: 'https://github.com/wanelo-chef/nginx.git'
+cookbook 'postgres', git: 'https://github.com/wanelo-chef/postgres.git'

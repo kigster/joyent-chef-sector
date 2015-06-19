@@ -1,0 +1,39 @@
+SITE
+  remote: http://supermarket.getchef.com/api/v1
+  specs:
+    build-essential (2.2.3)
+    ipaddr_extensions (0.3.0)
+    paths (0.3.0)
+    rbac (1.0.3)
+    resource-control (0.1.2)
+    smf (2.2.7)
+      rbac (>= 1.0.1)
+
+GIT
+  remote: https://github.com/wanelo-chef/nginx.git
+  ref: master
+  sha: bc5183691f19ca03a765341316c58caf0374b53d
+  specs:
+    nginx (0.4.2)
+      build-essential (>= 0.0.0)
+      paths (~> 0.3)
+      resource-control (~> 0.1)
+      smf (~> 2.1)
+
+GIT
+  remote: https://github.com/wanelo-chef/postgres.git
+  ref: master
+  sha: 1798d54ae8cd20f7a514597afe170455b8d2a845
+  specs:
+    postgres (2.15.0)
+      build-essential (>= 0.0.0)
+      ipaddr_extensions (>= 0.0.0)
+      paths (>= 0.0.0)
+      rbac (>= 0.0.0)
+      resource-control (>= 0.0.0)
+      smf (>= 2.0.1)
+
+DEPENDENCIES
+  nginx (>= 0)
+  postgres (>= 0)
+

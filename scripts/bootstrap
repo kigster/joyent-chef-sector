@@ -1,0 +1,3 @@
+#!/bin/bash
+bundle exec knife bootstrap $host_ip --distro base --environment production --node-name app001.prod  --ssh-user root 2>&1 
+
